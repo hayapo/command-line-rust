@@ -2,6 +2,6 @@
 
 This is a repository for studying the Command-Line Rust from O'Reilly.
 
-## thanks
+## Thanks
 
 Thanks to Ken Youens-Clark, the author of this book, and Kouki Nakayama, the translator.
