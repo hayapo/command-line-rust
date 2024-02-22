@@ -5,7 +5,6 @@ use std::io::{self, BufRead, BufReader};
 
 type MyResult<T> = Result<T, Box<dyn Error>>;
 
-#[allow(dead_code)]
 #[derive(Debug)]
 pub struct Config {
     files: Vec<String>,
@@ -28,7 +27,7 @@ pub fn get_args() -> MyResult<Config> {
     )
     .arg(
         Arg::new("number")
-            .long("number-lines")
+            .long("number")
             .short('n')
             .help("Number lines")
             .action(clap::ArgAction::SetTrue),

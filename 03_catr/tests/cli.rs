@@ -177,3 +177,15 @@ fn all_n() -> TestResult {
 fn all_b() -> TestResult {
     run(&["-b",EMPTY,FOX,SPIDERS,BUSTLE], "tests/expected/all.b.out")
 }
+
+
+// test long version argument
+#[test]
+fn long_n() -> TestResult {
+    run(&["--number", BUSTLE], "tests/expected/the-bustle.txt.n.out")
+}
+
+#[test]
+fn long_b() -> TestResult {
+    run(&["--number-nonblank", BUSTLE], "tests/expected/the-bustle.txt.b.out")
+}
